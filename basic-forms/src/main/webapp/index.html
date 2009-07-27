@@ -1,0 +1,9 @@
+<lift:surround with="default" at="content">
+	<h2>Welcome to your project!</h2>
+	<lift:HelloWorld.show form="POST">
+        Hello <hello:who />
+		<br />
+		<hello:whoField hello:id="whoField" />
+		<hello:submit />
+	</lift:HelloWorld.show>
+</lift:surround>
