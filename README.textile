@@ -1,0 +1,3 @@
+h2. Lift Examples
+
+A selection of web applications based on the "Lift":http://liftweb.net framework.
