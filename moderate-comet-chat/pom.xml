@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>eu.getintheloop.example</groupId>
-  <artifactId>basic-database-connection</artifactId>
+  <artifactId>moderate-comet-chat</artifactId>
   <packaging>war</packaging>
   <name>${project.artifactId}</name>
 
@@ -15,17 +15,4 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
  
-  <dependencies>
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>5.0.8</version>
-    </dependency>
-    <dependency>
-      <groupId>net.liftweb</groupId>
-      <artifactId>lift-mapper</artifactId>
-      <version>${lift.version}</version>
-    </dependency>
-  </dependencies>
-  
 </project>
