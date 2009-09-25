@@ -14,5 +14,14 @@
     <version>1.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
- 
+  
+  <dependencies>
+    <dependency>
+      <groupId>net.liftweb</groupId>
+      <artifactId>lift-textile</artifactId>
+      <version>${lift.version}</version>
+    </dependency>
+  </dependencies>
+  
+  
 </project>

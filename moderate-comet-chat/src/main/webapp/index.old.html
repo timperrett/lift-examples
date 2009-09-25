@@ -1,0 +1,57 @@
+<lift:surround with="default" at="content">
+  <lift:comet type="Chat" name="Other">
+  
+    <h1>Chat Demo</h1>
+    <p>Messages:</p>
+    
+    <div class="widget">
+      <center><b>Group Chat</b></center><br />
+      <lift:comet type="Chat">
+        <chat:body>
+          Hello <chat:name/>
+          <ul chat:id="na">
+            <chat:list>
+              <li><list:when/> <list:who/>: <list:msg/></li>
+            </chat:list>
+          </ul>
+        </chat:body>
+        <chat:input>
+          <chat:input/> <input type="submit" value="Chat" />
+        </chat:input>
+      </lift:comet>
+    </div>
+    
+    <!-- <div class="clearwrapper">
+          <chat:body>
+          Hello <chat:name/>
+          <ul id="chatwindow">
+            <li>fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds 
+              fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds 
+              fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds fsd fds </li>
+            <li>fsdfds</li>
+            <li>fsdfds</li>
+            <li>fsdfds</li>
+          </ul> 
+          <ul chat:id="na">
+            <chat:list>
+              <li><list:when/> <list:who/>: <i><list:msg/></i></li>
+            </chat:list>
+          </ul>
+          
+          <ul id="friendslist">
+            <li>Tim</li>
+            <li>Tim</li>
+            <li>Tim</li>
+          </ul>
+          </chat:body>
+        </div>
+        
+        <p>Send a message:</p>
+        <input type="text" id="messagebox" />
+        <chat:input>
+          <chat:input/> <input type="submit" value="Post It" chat:class="send-button" />
+        </chat:input>
+         -->
+  </lift:comet>
+</lift:surround>
+

@@ -5,6 +5,7 @@ import _root_.net.liftweb.http._
 import _root_.net.liftweb.sitemap._
 import _root_.net.liftweb.sitemap.Loc._
 import Helpers._
+import _root_.net.liftweb.http.provider._
 import javax.servlet.http.HttpServletRequest
 
 /**
@@ -17,7 +18,7 @@ class Boot {
     LiftRules.addToPackages("eu.getintheloop.example")
     LiftRules.early.append(makeUtf8) 
   }
-  private def makeUtf8(req: HttpServletRequest) { 
+  private def makeUtf8(req: HTTPRequest){ 
     req.setCharacterEncoding("UTF-8") 
   }
 }

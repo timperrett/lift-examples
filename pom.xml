@@ -16,7 +16,7 @@
   
   <modules>
     <module>basic-comet-chat</module>
-    <module>basic-forms</module>
+    <!-- <module>basic-forms</module> -->
   </modules>
   
   

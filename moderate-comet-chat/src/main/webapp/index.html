@@ -1,4 +1,39 @@
-<lift:surround with="default" at="content"> 
-  <h2>Chat away!</h2> 
-  <lift:comet type="Chat" /> 
-</lift:surround> 
+<lift:surround with="default" at="content">
+
+  <h1>Chat Demo</h1>
+  
+  <lift:comet type="Chat" name="Other">
+    
+    <chat:body>
+      <div class="clearwrapper">
+        <p>Messages for <chat:name/>:</p>
+        <!-- chat messages appear here -->
+        <ul class="chatwindow" chat:id="na">
+          <chat:list>
+            <li><list:when/> <list:who/>: <i><list:msg/></i></li>
+          </chat:list>
+        </ul>
+        
+        <ul id="friendslist">
+          <li>Tim</li>
+          <li>Tim</li>
+          <li>Tim</li>
+          <li>Tim</li>
+          <li>Tim</li>
+          <li>Tim</li>
+          <li>Tim</li>
+          <li>Tim</li>
+        </ul>
+        
+        
+      </div>
+    </chat:body>
+    
+    <chat:input>
+      <chat:input chat:class="messagebox" /> <input type="submit" class="send-button" value="Send" />
+    </chat:input>
+    
+  </lift:comet>
+
+</lift:surround>
+
